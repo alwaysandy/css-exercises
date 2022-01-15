@@ -25,3 +25,54 @@ input {
   width: 400px;
   margin-bottom: 16px;
 }
+
+/* Instead of justifying content in the body, let the content div grow, and
+   justify and align content in the content div. */
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+div.header ,
+div.footer {
+  display:flex;
+  padding: 14px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+div.footer {
+  background-color: #eeeeee;
+}
+
+div.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* flex: 1;
+     justify-content: center;*/
+}
+
+.left-links,
+.right-links {
+  display: flex;
+  gap: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: #555;
+  font-size: 15px;
+}
+
+/* Should have included button padding too */
+button {
+  padding: 8px 16px;
+}

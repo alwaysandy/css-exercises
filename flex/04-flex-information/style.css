@@ -24,3 +24,30 @@ img {
   justify-content: center;
   background: #eee;
 }
+
+.title {
+  margin: 32px;
+  display: flex;justify-content: center;
+  justify-content: center;
+}
+
+.plant-container {
+  display: flex;
+  justify-content: center;
+  gap: 52px;
+}
+
+/* Instead of giving a flex item a basis of 200px, max-width can be set, thus
+   making most of this flex stuff useless. Title and text can also just be
+   text aligned via the body. */
+.plant-item {
+  width: 200px;
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text {
+  text-align: center;
+}

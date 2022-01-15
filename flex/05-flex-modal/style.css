@@ -64,3 +64,40 @@ button.cancel {
   border: 1px solid #ddd;
   color: royalblue;
 }
+
+.modal {
+  padding: 16px;
+  display: flex;
+  gap: 16px;
+}
+
+.header {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.icon {
+  flex: 0 0 auto;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* A more simple solution would be to use margin to space out the items instead
+   of a vertical flex container like I did for the card elements */
+
+/*.header-container {
+  margin-bottom: 8px;
+}
+
+.text {
+  margin-bottom: 16px;
+}*/
